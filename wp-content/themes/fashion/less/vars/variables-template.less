@@ -1,0 +1,234 @@
+// Global values
+// --------------------------------------------------
+
+// Variables
+// --------------------------------------------------
+@image-theme-path-base:'../images/';
+@image-theme-path : '../images/default/';
+
+
+
+// themes colors
+// -------------------------
+@brown:					#b39770;
+@browndark: 			#e4dcd2;
+@lightbrown:			#f6eee3;	
+@blue:                  #049cdb;
+@bluedark:              #0064cd;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+@white :			 	#ffffff;
+@black :				#000000;
+@cyandark:   			#4e4d49;
+
+@green:                 #7db641;
+@red:                   #c83a3a;
+@dark:                	#333333;
+@lightred:             #896b5a;
+@gray-light: 			#999999;
+@theme-color-body:      @white;
+
+@body-bg: @theme-color-body;
+
+
+
+@theme-color-default   : @green; // using for default color of all pages such as background color for top menu, block header
+@theme-color-primary   : @white; // for hightligh block header, button as default it is  color
+@theme-color-secondary : #EDEDED ;
+@theme-color-fourdary  : #e4e4e4; 
+@theme-color-fivedary  : @black;
+
+@theme-color 			:@theme-color-fivedary;
+@theme-color-hover      : @gray-light;
+
+@theme-padding           : @line-height-computed - 2;
+@theme-margin            : @line-height-computed - 2;
+
+@btn-theme-primary       : @theme-color ;
+@btn-theme-primary-hover : @gray-dark ;
+
+@text-primary-theme : @theme-color;
+@text-danger-theme : @theme-color-secondary;
+@theme-font-family-secondary:"Lato", serif;
+@theme-font-family-three:"Lato", serif;
+
+
+@border-color: @theme-color-secondary;
+/**
+ * Heading Page
+ */
+@heading-border            :  2px solid @theme-color-primary;
+@heading-hightlight-border :  2px solid @theme-color-default;
+
+
+/* 
+ * product block
+ */
+@product-margin                     : @theme-margin - 5 ;
+@product-padding                    : @theme-padding - 5;
+@product-lineheight                 : 23px;
+@product-link-color  		        : @theme-color-secondary; 
+@product-name-font-size		        : @font-size-base;
+@product-name-headings-font-family  : @headings-font-family;
+@product-name-color  		        : @theme-color-secondary;
+@product-price-old-color 			: @gray-light;
+@product-price-new-color 			: #b34a4a;
+@product-price-color				: @theme-color-fivedary;
+@product-price-tax                  : #bbb;
+@product-action-link-color          : #ccc;
+@product-action-bg  		        : #4c4c4c;
+@product-action-hover-bg 	        : #f8f8f8;
+@product-boder-color                : @theme-color-secondary;
+@product-label-special-color        : #F5EA32;
+
+/* buttons */
+@btn-wrap-border:   #CCC ;
+@btn-wrap-bg    : @white; 
+
+
+/* 
+ * htab module 
+ */
+@htab-border-color 	     : @nav-tabs-border-color; 
+@htab-border 		     : @nav-tabs-border-color; 
+@htab-nav-padding	     : 7px 20px;
+@htab-nav-color		     : @gray-light;
+@htab-bg    		     : @white;
+@htab-bg-selected     	 : @theme-color-primary;
+@htab-nav-selected-color : @theme-color-fivedary;
+@htab-border-color       : @theme-color-secondary;
+/* 
+ * Mega Menu Module
+ */
+@megamenu-bg: @theme-color-fivedary; 
+@megamenu-sub-color:@gray-light;
+@megamenu-color: @black;
+@megamenu-border-color:#999;
+@navbar-padding:         @jumbotron-padding - 20 @jumbotron-padding - 15 @jumbotron-padding - 10;
+
+// Vertical Menu
+// -------------------------
+@vertical-menu-padding:             0px;
+@vertical-menu-bg: 					@white;
+@vertical-menu-bg-hover:			#f3f3f3;
+@vertical-menu-color: 				@theme-color-fivedary;
+@vertical-menu-link-color:  		@theme-color-fivedary;
+@vertical-menu-link-hover-color:    #666666;
+@vertical-menu-link-font-size:      13px;
+@vertical-menu-icon-color: 			@white;
+@vertical-menu-icon-font-size:      20px;
+@vertical-menu-font-size:           14px;
+@vertical-menu-font-family: 		'Noticia Text', serif;
+@vertical-menu-link-padding:        14px 30px;
+@vertical-menu-border-color: 		1px solid @theme-color-fivedary;
+/* 
+ * Box Modules 
+ */
+@box-module-margin	         : @line-height-computed;
+@box-module-heading-border   : @gray-lighter;
+@box-module-heading-bg		 : @white;
+@box-module-heading-padding  : @line-height-computed - 7;
+@box-module-heading-margin   : @line-height-computed - 7;
+@box-module-heading-font     : @headings-font-family;
+@box-module-heading-color    : @theme-color;
+@box-module-heading-fontsize : @font-size-base + 1;
+@box-module-border-color     : @white;
+@box-module-content-bg       : #f5f5f5;
+@box-module-content-padding  : @theme-padding;
+@box-module-badge            : @theme-color;
+@box-module-text-light       : @theme-color-default;
+ /* 
+  * LAYOUTS VAIRABLES 
+  */
+
+// topbar  
+@topbar-bg				: @white; 
+@topbar-color			: @gray-dark;
+@topbar-font-size  		: @font-size-base - 1;
+@topbar-link-color      : #777777;
+@topbar-link-hover-color: @theme-color-fivedary ;
+
+//header-main
+@header-main-bg				: @white; 
+@header-main-padding        : auto;
+@header-main-height 		: 115px;
+
+//wpo-mainnav
+@mainnav-bg				: @lightbrown; 
+@mainnav-wrap-bg		: @theme-color-primary;
+
+//Offcanvas
+@offcanvas-bg           : @theme-color-fivedary;
+@offcanvas-color        : @theme-color-primary;
+
+// footer position
+@footer-bg 				: @white;
+@footer-color 				: @gray-dark;
+@footer-heading-font-size  : @font-size-base;
+@footer-heading-color		: @footer-color;
+@footer-heading-boder-color: 2px solid transparent;
+@footer-link-color         : @footer-color;
+@footer-link-hover-color   : @theme-color-fivedary;
+@footer-padding            : @line-height-computed + 13;
+@footer-margin             : @line-height-computed + 13;
+//footer-top
+@footertop-bg 			: @white;
+@footertop-link         : @footer-link-hover-color;
+
+// powered by
+@power-bg              : @white;
+@power-text-color      : @white;
+@power-link-color      : @gray-dark;
+@power-link-color-hover: @theme-color-hover;
+@power-padding         : @footer-padding;
+@power-margin          : @footer-margin;
+//contact
+@contact-bg:                        lighten(@gray-light, 30%);
+@contact-padding:                   20px;
+@contact-border:                    0;
+@contact-icon-color                 :@white;
+@contact-icon-bg                    :@gray;
+@contact-icon-font-size             :@font-size-base + 2;
+@contact-icon-hover-bg              :@gray-dark;
+
+
+
+// Off-Canvas Width
+@wpo-off-canvas-width:                 280px;
+
+// Inverted navbar
+//
+// Reset inverted navbar basics
+@navbar-offcanvas-bg-close: 				  @theme-color-secondary;
+@navbar-offcanvas-color:                      @gray-light;
+@navbar-offcanvas-bg:                         @theme-color-fivedary;
+@navbar-offcanvas-border:                     darken(@navbar-offcanvas-bg, 10%);
+
+// Inverted navbar links
+@navbar-offcanvas-link-color:                 @white;
+@navbar-offcanvas-link-hover-color:           #999;
+@navbar-offcanvas-link-hover-bg:              transparent;
+@navbar-offcanvas-link-active-color:          @navbar-offcanvas-link-hover-color;
+@navbar-offcanvas-link-active-bg:             darken(@navbar-offcanvas-bg, 10%);
+@navbar-offcanvas-link-disabled-color:        #444;
+@navbar-offcanvas-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-offcanvas-brand-color:                @navbar-offcanvas-link-color;
+@navbar-offcanvas-brand-hover-color:          #fff;
+@navbar-offcanvas-brand-hover-bg:             transparent;
+
+// Inverted navbar search
+// Normal navbar needs no special styles or vars
+@navbar-offcanvas-search-bg:                  lighten(@navbar-offcanvas-bg, 25%);
+@navbar-offcanvas-search-bg-focus:            #fff;
+@navbar-offcanvas-search-border:              @navbar-offcanvas-bg;
+@navbar-offcanvas-search-placeholder-color:   #ccc;
+
+// Inverted navbar toggle
+@navbar-offcanvas-toggle-hover-bg:            #333;
+@navbar-offcanvas-toggle-icon-bar-bg:         #fff;
+@navbar-offcanvas-toggle-border-color:        #333;
+

@@ -1,0 +1,415 @@
+
+/**
+ * BASE CSS STYLES
+ */
+
+html {    
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+body { 
+    background-color: @body-bg;
+    margin: 0px;          
+    padding: 0px;
+    font-size: @font-size-base;
+    //overflow-x: hidden; 
+}
+.fs9{ font-size:@font-size-base - 3 ; }
+.fs10{ font-size:@font-size-base - 2; } 
+.fs11{ font-size:@font-size-base - 1 ; }
+.fs12{ font-size:@font-size-base; }
+.fs13{ font-size:@font-size-base + 1; }
+.fs14{ font-size:@font-size-base + 2; }
+.fs15{ font-size:@font-size-base + 3; }
+.fs16{ font-size:@font-size-base + 4; }
+
+.video-responsive {
+    height        : 0;
+    padding-top   : 0;
+    padding-bottom: 56.25%;
+    margin-bottom : 10px;
+    position      : relative;
+    overflow      : hidden;
+    embed,iframe,object,video{
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        height  : 100%;
+        position: absolute;
+        border:0;
+    }
+}
+
+a {
+    color: @theme-color;
+    img {
+        border: none;
+    }
+     &:hover {
+        text-decoration: none;
+        color: @gray-light;
+    }
+    &:focus {
+        outline: none;
+        outline-offset: -2px;
+        color: @theme-color-hover;
+    }
+    cursor: hand;cursor: pointer;
+}
+
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul li , ol li {
+ line-height: 25px;
+}
+body, td, th, input, textarea, select, a {
+    outline: 0 none;
+}
+a,a:hover,a:focus{
+     .transition ( color 0.4s ease 0s);
+     text-decoration: none;
+}
+.quantity input,
+input[name="quantity"] {
+        width: auto;
+        display:  inline;
+        text-align: center;
+}
+input.input-full {
+    width: 100%!important;
+}
+.fullwidth {
+    width: 100%!important;
+}
+.wpb_row, ul.wpb_thumbnails-fluid > li, .last_toggle_el_margin, .wpb_button {    
+    margin-bottom: 18px!important;
+}
+.woocommerce{
+    a.button {
+        background: @theme-color-fivedary;
+        background-image: none;
+        color: @white;
+        border-radius: 0;
+        text-shadow: none;
+        font-weight: normal;
+        border: none;
+        -webkit-border-radius: 0;
+        &:hover {
+            background: #666;        
+        }
+    } 
+    table.cart input {
+        line-height: normal;
+    }
+}
+
+/*  Breadcrumb */
+.woocommerce .woocommerce-breadcrumb, .woocommerce-page .woocommerce-breadcrumb, .breadcrumb {
+    padding: 0;
+    margin: 25px 0;
+        a {
+            color: @gray-dark;
+            font-size: @font-size-base - 1;
+        }
+}
+/*  PAGINATION STYLE */
+.product-bottom {
+    margin-top: 18px;
+    padding: @theme-padding - 6 @theme-padding + 4 @theme-padding - 5;
+    border: 1px solid #ededed;
+}
+.paging {
+    .pagination {
+        margin: 0;
+    }
+    .rounded-corners(0);
+    .links {
+        float: left;
+        a,b{
+            padding: 0  @padding-small-horizontal - 5;
+        }
+        a {
+            display: inline-block;
+            color: @gray-dark;
+            &:hover{
+                color: @pagination-active-color;
+            }
+        }
+        b {
+            color: @pagination-active-color;
+        }
+    }
+    .results {
+        float: right;
+        font-style: italic;
+    }
+}
+
+/* button */
+.button {
+    cursor: pointer;
+    color: @white;
+    background-color: @theme-color-fivedary;
+    border:none;
+    .rounded-corners( 0 );
+    .box-shadow(none);
+    .transition( all 0.4s ease 0s);
+    font-style: italic;
+    padding: @theme-padding - 11 @theme-padding - 1;
+}
+.button:hover, input.button:hover {
+    background-color: @gray-dark;
+    color: @white;
+}
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.buttons {
+    background:@btn-wrap-bg;
+    border: 1px solid @btn-wrap-border;
+    overflow: auto;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    .center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right {
+        float: right;
+        text-align: right;
+    }
+    .left {
+        float: left;
+        text-align: left;
+    }
+}
+
+/* tab style */
+.woocommerce-tabs {
+    a {
+        padding: @htab-nav-padding;
+        float: left;
+        font-size: @font-size-base - 1;
+        font-family: @headings-font-family;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: @htab-nav-color;
+        margin-right: 2px;
+        margin-bottom: -1px;
+        display: none;
+    }
+    .nav-tabs li.active {
+        a, a:hover, a:focus {
+            background: @htab-bg-selected;
+            margin-bottom: -1px;
+            .border-exclude-bottom( 1px; solid ; @htab-border-color );
+            color: @htab-nav-selected-color;
+        }
+    } 
+    .tab-content{
+        padding: @theme-padding @theme-padding + 4;
+        margin-bottom: @theme-margin;
+        border:1px solid @htab-border-color;
+        z-index: 2;
+        margin-top: -1px;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 19px;
+        line-height: 32px;
+        text-transform: uppercase;
+    }
+}
+/*tab*/
+.tabs-group{
+    .tab-content{
+        padding: @theme-padding @theme-padding + 4;
+        margin-bottom: @theme-margin;
+        border:1px solid @htab-border-color;
+        z-index: 2;
+        margin-top: -1px;
+    }
+}
+ 
+/* carousel */
+.carousel-controls {
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    margin-left: -79px;
+    .carousel-control {
+        font-size: @font-size-base - 2;
+        font-style: italic;
+        color: @white;
+        height: 19px;
+        width: 60px;
+        margin: 0 @product-margin + 6;
+        line-height: 18px;
+        top: 10px;
+        .opacity(1);
+		.transition(all .2s ease-in-out);
+        &.left {
+            background-image: url('@{image-theme-path}icon-prev-hover.png');  
+            &:hover{
+                background-image: url('@{image-theme-path}icon-prev.png');  
+            }   
+        }
+        &.right {
+            background-image: url('@{image-theme-path}icon-next-hover.png');
+            left: 62px;
+            right: auto;  
+            &:hover{
+                background-image: url('@{image-theme-path}icon-next.png');  
+            } 
+        }
+    }    
+}
+
+.carousel-control {
+    font-size: @font-size-base + 17;
+    color: @theme-color;    
+    text-shadow:none;
+    top: 50%;
+    z-index: 20;
+    .size(35px,35px);
+    &.left {
+        left: -6%; 
+        filter:none;
+        background: url('@{image-theme-path}caret-left.png') no-repeat center center scroll;
+    }
+    &.right {
+        right: -6%;
+        filter:none;
+        background: url('@{image-theme-path}caret-right.png') no-repeat center center scroll;
+    }
+}
+
+/* links style */
+
+ul.links {
+    position: relative;
+    margin: 0;
+    padding: 5px 5px 0;
+    li{
+        line-height: 20px;
+        color: #CCCCCC;
+        float: left;
+        font-size: 10px;
+        margin-left: 10px;
+        display: list-item;
+        > a {
+            span {
+                font-size: @font-size-base + 1;
+            }
+        }
+    }
+}
+
+
+  ul.list{
+        > li {
+            position: relative;
+           
+            ul {
+                display: none;
+                & > li {
+                    padding: 10px 0 0px 25px;
+                    & > a {
+                        text-decoration: none;
+                        display: block;
+                    }
+                    & > a.active {
+                    }
+                }
+            }
+            > a {
+                &:hover ,&.active {
+                }
+
+            }
+            a {
+                &:hover,&.active{
+                    .badge {
+                        background-color: @theme-color-hover;
+                    }
+                }
+            }
+            a.active {
+                color: @theme-color-hover;
+                ul {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+
+.btn-arrow-right{
+    position: relative;
+}
+
+/*rating*/
+.star-rating,.stars {
+    font-size: @font-size-base - 4!important;
+    float: none!important;    
+    span, a {
+        color: #24282b;    
+        display: inline-block; 
+        padding: 5px 0 0;       
+    }
+}
+
+
+// Visual Composer
+.wpb_content_element{
+    margin-bottom: 0!important;
+}
+
+.box-element{
+    margin-bottom:40px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}

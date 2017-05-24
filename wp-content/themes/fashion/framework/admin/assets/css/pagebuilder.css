@@ -1,0 +1,11 @@
+.layout_images img{
+	display: block;
+	float: left;
+	margin: 0 10px 10px 0;
+	cursor: pointer;
+	border:3px solid transparent;
+}
+
+.layout_images img.active{
+	border-color: #333;
+}

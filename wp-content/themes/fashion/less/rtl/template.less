@@ -1,0 +1,237 @@
+// WPO - Base
+//-------------------------------
+
+
+h2.title-section span{
+    display: block;
+    width: 18%;
+    margin: 0 auto;
+    line-height: normal;
+    &:before{
+        display: block;
+    }
+}
+
+
+// WPO - Header
+//-------------------------------
+
+#wpo-header{
+    .cart-header{
+        text-align: left;
+        .cart-dropdown-header{
+            float: left;
+        }
+    }
+    .contact-header{
+        .fa{
+           // margin-left: @margin-base-horizontal + 2;
+            margin-right: 0;
+        }
+    }
+}
+.wpo_search{
+    .fa{
+        right: auto;
+        left: 10px;
+    }
+}
+.topbar-menu{
+    border: none;
+}
+.user-setting {
+    .dropdown-menu {
+        li{
+            .fa{
+                display: inline;
+            }
+        }
+    }
+    > li.dropdown{
+        float: left;
+        margin-right: 0;
+        margin-left: -7.5px;
+        > a{
+          border-left: none;
+          //border-right: 1px solid @theme-color-border;
+        }
+    }
+}
+
+
+// WPO - Woocommerce
+//--------------------------------
+
+.woocommerce-page{
+    .woocommerce-result-count{
+        float: left;
+    }    
+}
+
+.woocommerce{
+    span.onsale{
+     
+    }
+}
+
+.product-block{
+    &:hover{
+        .image{
+            .image-hover{
+                right: 0;
+                left: auto;
+            }
+            .image-effect{
+                right: 100%;
+                left: auto;
+            }
+        }
+    }
+    .image{
+        .image-hover{
+            right: -100%;
+            left: auto;
+        }
+        .image-effect{
+            right: 0;
+            left: auto;
+        }
+    }
+}
+
+
+.product-list{
+    .product-meta{
+        text-align: right;
+    }
+}
+
+// WPO - Woocommerce info
+//---------------------------------
+
+#single-product{
+    div.thumbnails{
+        a{
+            &:after,
+            &:before{
+                display: none;
+            }
+        }
+    }
+}
+
+.woocommerce-tabs{
+    .tab-content{
+        //border-right: 1px solid @theme-color-border;
+        border-left: none;
+    }
+}
+    
+
+// WPO - Blog
+//---------------------------------   
+
+.blog-lastest.left{
+    //padding-left: @padding-large-horizontal;
+    padding-right: 0;
+    .content{
+        //padding-right: @padding-large-horizontal;
+        padding-left: 0;
+    }
+}
+.blog-lastest.right{
+    //padding-right: @padding-large-horizontal;
+    padding-left: 0;
+    .content{
+        //padding-left: @padding-large-horizontal;
+        padding-right: 0;
+    }
+}
+
+// WPO - Sidebar
+//----------------------------------
+
+.wpo-sidebar{
+
+    .recentcomments{
+        &:before{
+            float: right;
+            //margin-left: @margin-base-horizontal + 2;
+            margin-right: 0;
+        }
+    }
+    ul.product-categories{
+        li{
+            .count{
+                left: 12px;
+                right: auto;
+            }
+        }
+    }
+}
+
+.item-product-widget{
+    .images{
+        margin-right: 0;
+       // margin-left: @margin-base-horizontal + 2;
+    }
+}
+
+.comment-widget,
+.post-widget{
+    article{
+        img{
+            float: right;
+            margin-left: 15px;
+            margin-right: 0;
+        }
+    }
+}
+
+// WPO - Widget
+//----------------------------------
+
+.widget{
+    .widget-title{
+        text-align: right;
+    }
+}
+
+.item-brand{
+    &:last-child{
+        border-right: none;
+    }
+    &:first-child {
+        border-right: 1px solid #E0E0E0;
+    }
+}
+
+// WPO - Footer
+//----------------------------------
+
+#wpo-footer{
+    .footer-center{
+        li{
+            text-align: right;
+        }
+        .contact{
+            .fa{
+                //margin-left: @margin-base-horizontal + 2;
+                margin-right: 0;
+                padding-right: 3px;
+                padding-left: 0;
+            }
+        }
+        .follow{
+            ul{
+                text-align: right;
+                li{
+                    margin-left: 5px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+	
+}
+

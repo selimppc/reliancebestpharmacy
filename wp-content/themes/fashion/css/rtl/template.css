@@ -1,0 +1,118 @@
+h2.title-section span {
+  display: block;
+  width: 18%;
+  margin: 0 auto;
+  line-height: normal;
+}
+h2.title-section span:before {
+  display: block;
+}
+#wpo-header .cart-header {
+  text-align: left;
+}
+#wpo-header .cart-header .cart-dropdown-header {
+  float: left;
+}
+#wpo-header .contact-header .fa {
+  margin-right: 0;
+}
+.wpo_search .fa {
+  right: auto;
+  left: 10px;
+}
+.topbar-menu {
+  border: none;
+}
+.user-setting .dropdown-menu li .fa {
+  display: inline;
+}
+.user-setting > li.dropdown {
+  float: left;
+  margin-right: 0;
+  margin-left: -7.5px;
+}
+.user-setting > li.dropdown > a {
+  border-left: none;
+}
+.woocommerce-page .woocommerce-result-count {
+  float: left;
+}
+.product-block:hover .image .image-hover {
+  right: 0;
+  left: auto;
+}
+.product-block:hover .image .image-effect {
+  right: 100%;
+  left: auto;
+}
+.product-block .image .image-hover {
+  right: -100%;
+  left: auto;
+}
+.product-block .image .image-effect {
+  right: 0;
+  left: auto;
+}
+.product-list .product-meta {
+  text-align: right;
+}
+#single-product div.thumbnails a:after,
+#single-product div.thumbnails a:before {
+  display: none;
+}
+.woocommerce-tabs .tab-content {
+  border-left: none;
+}
+.blog-lastest.left {
+  padding-right: 0;
+}
+.blog-lastest.left .content {
+  padding-left: 0;
+}
+.blog-lastest.right {
+  padding-left: 0;
+}
+.blog-lastest.right .content {
+  padding-right: 0;
+}
+.wpo-sidebar .recentcomments:before {
+  float: right;
+  margin-right: 0;
+}
+.wpo-sidebar ul.product-categories li .count {
+  left: 12px;
+  right: auto;
+}
+.item-product-widget .images {
+  margin-right: 0;
+}
+.comment-widget article img,
+.post-widget article img {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.widget .widget-title {
+  text-align: right;
+}
+.item-brand:last-child {
+  border-right: none;
+}
+.item-brand:first-child {
+  border-right: 1px solid #E0E0E0;
+}
+#wpo-footer .footer-center li {
+  text-align: right;
+}
+#wpo-footer .footer-center .contact .fa {
+  margin-right: 0;
+  padding-right: 3px;
+  padding-left: 0;
+}
+#wpo-footer .footer-center .follow ul {
+  text-align: right;
+}
+#wpo-footer .footer-center .follow ul li {
+  margin-left: 5px;
+  margin-right: 0;
+}

@@ -1,0 +1,105 @@
+/*
+Theme Name: Fashion Woocommerce
+Theme URI: http://bit.ly/opalwp
+Author:  OpalWordpress team
+Author URI: http://bit.ly/opalwp
+Version: 1.7.6 Updated 18-Nov-2016
+Description: The Fashion woocommerce theme for WordPress by <a href="http://bit.ly/opalwp">OpalTeam</a>is a fully responsive theme that looks great on any device. That's the best for any kind of online shoping sites. <a href="http://bit.ly/opalwp">Follow us on Themeforest to receive newest updates</a>
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: right-sidebar, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: fashion
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import 'font.css';
+
+.wp-caption{
+	color:#000;
+}
+
+.wp-caption-text{
+	color:#000;
+}
+
+.sticky{
+	color:#000;
+}
+
+.gallery-caption{
+	color:#000;
+}
+
+.bypostauthor{
+	color:#000;
+}
+
+.alignright{
+	text-align: right;
+}
+
+.alignleft{
+	text-align: left;
+}
+
+.aligncenter{
+	text-align: center;
+}
+.languages {
+	position: relative;
+	z-index: 20;
+	margin-right: 5px;
+}
+.submenu-languages {
+	position: absolute;
+	visibility: hidden;
+	left: 0;
+	z-index: 30;
+	background-color: #000;
+	width: 100%;
+	border-top: 3px solid #000;
+}
+.submenu-languages li {
+	padding: 10px 20px;
+}
+.submenu-languages li a{
+	color: #999;
+}
+.submenu-languages li a:hover{
+	color: #fff;
+}
+.menu-item-language:hover .submenu-languages {
+	visibility: visible;
+}
+#lang_sel a {
+	line-height: 27px!important;
+	border: 1px solid #ededed!important;
+}
+.currency {
+	margin-right: 5px;
+}
+.currency select {
+	height: 29px;
+	display: inline-block;
+}
+.woocommerce span.onsale, .woocommerce-page span.onsale{
+	z-index: 999!important;
+} 
+
+.box-heading{
+	width: 100%;
+}
+.wpo_all_products{
+	padding-top: 30px!important;
+}
+.wpo-brand{
+	padding-top: 30px!important;
+}
+.mass-bottom{
+	padding-bottom: 30px!important;
+}
+
+.shopcol.first, .product-bottom{
+	clear: both;
+}
